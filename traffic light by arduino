@@ -1,0 +1,20 @@
+int button = 7;
+void setup() {
+   pinMode(button, INPUT);
+   digitalWrite(green, HIGH);
+   digitalWrite(red, LOW);
+   digitalWrite(yellow, LOW);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (digitalRead(button) == HIGH){
+       delay(15);
+       if (digitalRead(button) == HIGH) {
+           changeLights();
+           delay(10000);
+       }
+   }
+
+}
+//copied
